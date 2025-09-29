@@ -4,6 +4,16 @@ using MovieSearch.Infrastructure.Clients;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("https://moviessearchfe-a4bjdgb3hsfnc0fz.centralus-01.azurewebsites.net")
+              .AllowAnyHeader() 
+              .AllowAnyMethod(); 
+    });
+});
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 
@@ -28,6 +38,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
+app.UseCors("AllowAngular");
 app.UseAuthorization();
 
 app.MapControllers();
