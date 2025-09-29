@@ -1,7 +1,18 @@
+using MovieSearch.Application.Interfaces;
+using MovieSearch.Application.Services;
+using MovieSearch.Infrastructure.Clients;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IMovieApiClient, MovieApiClient>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -18,6 +29,8 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.MapStaticAssets();
 app.MapRazorPages()

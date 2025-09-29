@@ -5,6 +5,12 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieSearch.API", "MovieSearch.API\MovieSearch.API.csproj", "{9CF9922E-035F-4CCD-969C-09C3F3800C5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieSearch.Application", "MovieSearch.Application\MovieSearch.Application.csproj", "{08978317-BE27-4866-9CC5-21FBAFB24C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieSearch.Domain", "MovieSearch.Domain\MovieSearch.Domain.csproj", "{3D639E71-BAA7-4DFD-B223-9C70A3E20201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieSearch.Infrastructure", "MovieSearch.Infrastructure\MovieSearch.Infrastructure.csproj", "{8405B3AB-129C-4840-A0F1-CC2FCEEC1E7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{9CF9922E-035F-4CCD-969C-09C3F3800C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF9922E-035F-4CCD-969C-09C3F3800C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF9922E-035F-4CCD-969C-09C3F3800C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08978317-BE27-4866-9CC5-21FBAFB24C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08978317-BE27-4866-9CC5-21FBAFB24C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08978317-BE27-4866-9CC5-21FBAFB24C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08978317-BE27-4866-9CC5-21FBAFB24C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D639E71-BAA7-4DFD-B223-9C70A3E20201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D639E71-BAA7-4DFD-B223-9C70A3E20201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D639E71-BAA7-4DFD-B223-9C70A3E20201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D639E71-BAA7-4DFD-B223-9C70A3E20201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8405B3AB-129C-4840-A0F1-CC2FCEEC1E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8405B3AB-129C-4840-A0F1-CC2FCEEC1E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8405B3AB-129C-4840-A0F1-CC2FCEEC1E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8405B3AB-129C-4840-A0F1-CC2FCEEC1E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
